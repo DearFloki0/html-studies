@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form action="/" method="POST">   <!--What is insert inside forms is sent to the server-->
+        <label for="num1">Number 1:</label>
+        <input type="number" name="num1" id="num1" required>  <!--input is where the person can type-->
+        
+        <label for="num2">Number 2:</label>
+        <input type="number" name="num2" id="num2" required>
+        
+        <label for="operation">Operation</label>
+        <select name="operation" id="operation" required>  <!--creates a list to select-->
+            <option value="add">Plus</option>
+            <option value="subtract">Minus</option>
+            <option value="multiply">Times</option>
+            <option value="divide">Division</option>
+        </select>
+        
+        <button type="submit">Calculate</button> <!--a button that when pressed submit the form-->
+    </form>
+    <h2 style="font-size: 50px; text-align: center;">Result: {{ result }}</h2>
+</body>
+</html>
