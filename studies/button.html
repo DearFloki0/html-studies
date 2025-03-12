@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first website</title>
+    <style>
+        body {
+            display: grid;
+            justify-content: center;
+            background-color: blue;
+            gap: 10px;
+        }
+
+        button {
+            border-radius: 100px;
+            background-color: aqua;
+            color: black;
+            height: 100px;
+        }
+
+        #botao {
+            border-radius: 50px;
+            background-color: green;
+            color: black;
+            height: 100px;
+            width: 100px;
+        }
+
+        h1 {
+            font-size: 100px;
+            color: red;
+        }
+
+        #subtitle {
+            color: black;
+            font-size: 50px;
+        }
+
+        .nome {
+            color:yellowgreen;
+            font-size: 30px;
+        }
+        
+    </style>
 </head>
+
 <body>
-    
-    <a href="https://www.google.com">
-        <button>Click me</button>
-    </a>
+    <h1>
+        Hello World
+    </h1>
+
+    <h1 id="subtitle">
+        World Hello 
+    </h1>
+
+    <h1 class="nome">
+        Eduardo
+    </h1>
+
+    <h2 id="subtitle">
+        Hello World
+    </h2>
 
 
+    <h3 class="nome">
+        Hello World
+    </h3>
+
+    <button id="botao" onclick="linkNav()">Click me</button>
+    <button onclick="linkNav()">Click me</button>
+
+    <script>
+        function linkNav() {
+            const link = "https://www.google.com"
+            window.location.href = link;
+        }
+    </script>
 </body>
+
 </html>

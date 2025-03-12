@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+    <title>Tabela Vertical</title>
+    <style>
+        .table-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h3>Store Hours</h3>
-
-    <table bgcolor="Black" width="650"> <!--<tr> = table row-->
-<tr bgcolor="Grey">
-    <th width="100">Monday</th>
-    <th width="100">Tuesday</th>
-    <th width="100">Wednesday</th>
-    <th width="100">Thursday</th>
-    <th width="100">Friday</th>
-    <th width="100">Saturday</th>
-    <th width="100">Sunday</th>
-</tr>
-<tr bgcolor="Lightgrey" align="Center">
-    <td>Closed</td>
-    <td>9 - 5</td>
-    <td>9 - 5</td>
-    <td>9 - 5</td>
-    <td>9 - 5</td>
-    <td>Closed</td>
-    <td>Closed</td>
-</tr>
-    </table>
-<br>
-<table bgcolor="Black" width="650"> <!--<tr> = table row-->
-    <tr bgcolor="Grey">
-        <th width="100">Monday</th>
-        <th width="100">Tuesday</th>
-        <th width="100">Wednesday</th>
-        <th width="100">Thursday</th>
-        <th width="100">Friday</th>
-        <th width="100">Saturday</th>
-        <th width="100">Sunday</th>
-    </tr>
-    <tr bgcolor="Lightgrey" align="Center">
-        <td>Closed</td>
-        <td>9 - 5</td>
-        <td>9 - 5</td>
-        <td>9 - 5</td>
-        <td>9 - 5</td>
-        <td>Closed</td>
-        <td>Closed</td>
-    </tr>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Monday</th>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>9 - 5</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>9 - 5</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>9 - 5</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>9 - 5</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <th>Sunday</th>
+                <td>Closed</td>
+            </tr>
         </table>
+    </div>
+
 </body>
+
 </html>
